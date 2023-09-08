@@ -1,0 +1,21 @@
+{
+  "API_1": {
+    "Class": "L8X, RCO-Client-Optimizer",
+    "key": "https://raw.githubusercontent.com/L8X/Roblox-Client-Optimizer/main/ClientAppSettings.json"
+  },
+
+  "API_2": {
+    "Class": "Regular-Client-Optimizer",
+    "key": "https://raw.githubusercontent.com/Eagisa/ClientSettings/main/ClientAppSettingsV2.json"
+  },
+
+  "API_3": {
+    "Class": "Only-FPS-Unlocker",
+    "key": "https://raw.githubusercontent.com/Eagisa/ClientSettings/main/Client.json"
+  },
+
+  "API_Client": {
+    "Class": "ClientSettings-ClientVersion",
+    "key": "https://clientsettings.roblox.com/v2/client-version/WindowsPlayer"
+  }
+}
