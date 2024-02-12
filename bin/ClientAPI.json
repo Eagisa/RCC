@@ -6,7 +6,7 @@
 
   "API_2": {
     "Class": "Regular-Client-Optimizer",
-    "key": "https://raw.githubusercontent.com/Eagisa/ClientSettings/main/ClientAppSettingsV2.json"
+    "key": "https://raw.githubusercontent.com/Eagisa/RCC/main/ClientSettingsPresets/ClientAppSettings.json"
   },
 
   "API_3": {
