@@ -15,7 +15,7 @@
   },
 
   "API_Client": {
-    "Class": "ClientSettings-ClientVersion",
+    "Class": "ClientVersion",
     "key": "https://clientsettingscdn.roblox.com/v2/client-version/WindowsPlayer/channel/zflag"
   }
 }
