@@ -6,12 +6,17 @@
 
   "API_2": {
     "Class": "Regular-Client-Optimizer",
-    "key": "https://raw.githubusercontent.com/Eagisa/RCC/main/R-C-P/ClientAppSettings.json"
+    "key": "https://raw.githubusercontent.com/Eagisa/ClientSettings/main/ClientAppSettingsV2.json"
   },
 
   "API_3": {
     "Class": "Only-FPS-Unlocker",
     "key": "https://raw.githubusercontent.com/Eagisa/ClientSettings/main/Client.json"
+  },
+
+  "API_4": {
+    "Class": "Ouch SFX",
+    "key": "https://raw.githubusercontent.com/Eagisa/RCC/main/R-P/ouch.ogg"
   },
 
   "API_Client": {
