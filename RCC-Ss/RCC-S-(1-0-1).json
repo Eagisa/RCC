@@ -19,6 +19,11 @@
     "key": "https://raw.githubusercontent.com/Eagisa/RCC/main/R-P/ouch.ogg"
   },
 
+  "API_5": {
+    "Class": "test",
+    "key": "https://raw.githubusercontent.com/Eagisa/ClientSettings/main/Client.json?token=GHSAT0AAAAAACNE5DZIVDPUAE55BHZQJWOCZOPGNWQ"
+  },
+
   "API_Client": {
     "Class": "ClientSettings-ClientVersion",
     "key": "https://clientsettingscdn.roblox.com/v2/client-version/WindowsPlayer/channel/zflag"
