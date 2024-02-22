@@ -21,6 +21,7 @@
 
   "R-C-V": {
     "Class": "Roblox Client Version",
-    "key": "https://clientsettingscdn.roblox.com/v2/client-version/WindowsPlayer/channel/zflag"
+    "key": "https://clientsettings.roblox.com/v2/client-version/WindowsPlayer",
+    "key_1": "https://clientsettingscdn.roblox.com/v2/client-version/WindowsPlayer/channel/zflag"
   }
 }
