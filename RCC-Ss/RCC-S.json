@@ -20,9 +20,8 @@
 
 
   "RCC-FS": {
-    "RCC_EXE": "http://example.com/file1.txt",
-    "RCC_UPDATER": "http://example.com/file2.txt",
-    "RCC_DEBUGGER": "http://example.com/file3.txt"
+    "RCCMP": "https://github.com/Eagisa/RCC/raw/main/R-D-Fs/RCCMP.pyc",
+    "RCC-CBS": "https://github.com/Eagisa/RCC/raw/main/R-D-Fs/RCC_CBS.pyc"
   },
 
 
