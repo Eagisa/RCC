@@ -21,7 +21,7 @@
 
   "RCC-FS": {
     "RCCMP": "https://github.com/Eagisa/RCC/raw/main/R-D-Fs/RCCMP.pyc",
-    "RCC-CBS": "https://github.com/Eagisa/RCC/raw/main/R-D-Fs/RCC_CBS.pyc"
+    "RCC_CBS": "https://github.com/Eagisa/RCC/raw/main/R-D-Fs/RCC_CBS.pyc"
   },
 
 
