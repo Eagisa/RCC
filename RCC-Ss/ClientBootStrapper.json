@@ -1,7 +1,0 @@
-{
-    "RCC-In": {
-      "RCC_EXE": "http://example.com/file1.txt",
-      "RCC_UPDATER": "http://example.com/file2.txt",
-      "RCC_DEBUGGER": "http://example.com/file3.txt"
-    }
-}
