@@ -1,7 +1,7 @@
 {
     "RCC-S": {
-      "Link_1": "RCC-Server-Info",
-      "Link_2": "1.0.0.2",
-      "Link_3": "3/20/2024 10:51 PM"
+      "Link_1": "http://example.com/file1.txt",
+      "Link_2": "http://example.com/file2.txt",
+      "Link_3": "http://example.com/file3.txt"
     }
   }
