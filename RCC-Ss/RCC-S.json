@@ -1,0 +1,58 @@
+{
+  "Server":"Client",
+  "======================":"==============",
+  "RCC-S": {
+    "Class": "RCC-Server-Info",
+    "Version": "1.0.0.2",
+    "Date_Modified": "3/20/2024 10:51 PM"
+  },
+
+  "R-C-C": {
+    "Class": "RCC-Client-Info",
+    "Version": "2.0.0",
+    "Date_Modified": "3/20/2024 10:51 PM",
+    "====================":"=============="
+  },
+
+  "RCC":"BootStrapper",
+  "=============":"=============",
+  "R-D-Fs":{
+    "Class":"RCC-BootStrapper",
+    "Version": "100.0.3.4",
+    "Date_Modified": "3/20/2024 10:51 PM",
+    "==============":"============="
+  },
+
+  "RCC_IN":"Installer",
+  "==========":"==================================",
+  "RCC-D-Fs": {
+    "RCC_EXE": "http://example.com/file1.txt",
+    "RCC_UPDATER": "http://example.com/file2.txt",
+    "RCC_PASS": "http://example.com/file3.txt",
+  "==========":"=================================="
+  },
+
+  "Operation":"Tasks",
+  "=======================================":"================================================================",
+  "C-S-1": {
+    "Class": "L8X_RCO",
+    "key": "https://raw.githubusercontent.com/Eagisa/RCC/main/R-C-P/ClientAppSettings(L8X_RCO).json"
+  },
+
+  "C-S-2": {
+    "Class": "RCC",
+    "key": "https://raw.githubusercontent.com/Eagisa/RCC/main/R-C-P/ClientAppSettings(RCC).json"
+  },
+
+  "C-S-3": {
+    "Class": "BloxStrap",
+    "key": "https://raw.githubusercontent.com/Eagisa/RCC/main/R-C-P/ClientAppSettings(BloxStrap).json"
+  },
+
+  "R-S-F": {
+    "Class": "Oof SFX",
+    "key": "https://raw.githubusercontent.com/Eagisa/RCC/main/R-P/ouch.ogg",
+  "=======================================":"================================================================"
+  }
+  
+}
