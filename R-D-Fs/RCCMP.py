@@ -21,9 +21,9 @@ import importlib.util
 
 # RCC COnfiguration
 #===============================#
-RCC_version = "2.2.0"
-RCC_RD = "03/21/2024"
-RCC_cache_id = "RCC816545535434"
+RCC_version = "2.3.0"
+RCC_RD = "03/23/2024"
+RCC_cache_id = "RCC81652335434"
 #===============================#
 
 def StartRCC():
