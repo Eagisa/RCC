@@ -21,7 +21,7 @@ import importlib.util
 
 # RCC COnfiguration
 #===============================#
-RCC_version = "2.3.0"
+RCC_version = "2.4.0"
 RCC_RD = "03/23/2024"
 RCC_cache_id = "RCC81652335434"
 #===============================#

@@ -17,7 +17,7 @@ import time
 import importlib.util
 #RCC_CBS Version
 #=========================#
-RCC_CBS_Ver = "100.3.3.5"
+RCC_CBS_Ver = "101.3.5.5"
 #=========================#
 
 #Console configuration
