@@ -7,8 +7,8 @@
 
   "RCC-C": {
     "Class": "RCC-Client",
-    "Version": "2.2.0",
-    "Date_Modified": "3/20/2024 10:51 PM"
+    "Version": "2.3.0",
+    "Date_Modified": "3/23/2024 1:10 AM"
   },
 
   "RCC-CBS":{
@@ -21,8 +21,7 @@
 
   "RCC-FS": {
     "RCCMP": "https://github.com/Eagisa/RCC/raw/main/R-D-Fs/RCCMP.py",
-    "RCC_CBS": "https://github.com/Eagisa/RCC/raw/main/R-D-Fs/RCC_CBS.py",
-    "RCC_W": "https://github.com/Eagisa/RCC/raw/main/R-D-Fs/Working.txt"
+    "RCC_CBS": "https://github.com/Eagisa/RCC/raw/main/R-D-Fs/RCC_CBS.py"
   },
 
 
