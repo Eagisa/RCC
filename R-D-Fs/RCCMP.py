@@ -21,7 +21,7 @@ import importlib.util
 
 # RCC COnfiguration
 #===============================#
-RCC_version = "2.4.0"
+RCC_version = "2.5.0"
 RCC_RD = "03/23/2024"
 RCC_cache_id = "RCC81652335434"
 #===============================#
@@ -781,11 +781,11 @@ def StartRCC():
                 def menu():
                     print("\n", Fore.BLACK + Back.LIGHTGREEN_EX + " R.C.C ", Fore.LIGHTYELLOW_EX + "> More options are in-development.\n")
 
-                    print(Fore.LIGHTYELLOW_EX+"\n<+>---------------------<+>\n"
-                        " | (1) About RCC         |\n"
-                        " |-----------------------|\n"
-                        " | (2) Check For Updates |\n"
-                        "<+>---------------------<+>\n")
+                    print(Fore.LIGHTYELLOW_EX+"\n<+>-----------------------<+>\n"
+                        " | (1) About RCC           |\n"
+                        " |-------------------------|\n"
+                        " | (2) Visit RCC on Github |\n"
+                        "<+>-----------------------<+>\n")
                 menu()
                 
                 while True:
@@ -822,7 +822,22 @@ def StartRCC():
                         main()
                     
                     elif entry == '2':
-                        print()
+                        RCC_GITHUB = "https://github.com/Eagisa/RCC/releases"
+                        try:
+                            response = requests.head(RCC_GITHUB)
+                            if response.status_code == 200:
+                                web.open_new_tab(RCC_GITHUB)
+                                print("\n", Fore.BLACK+Back.LIGHTGREEN_EX+" R.C.C ", Fore.LIGHTYELLOW_EX+"> Thank you for visiting the RCC GitHub.\n")
+                            else:
+                                os.system("cls")
+                                RCC_Logo()
+                                print("\n", Fore.BLACK+Back.LIGHTGREEN_EX+" R.C.C ", Fore.LIGHTYELLOW_EX+"> Error couldn't visit the RCC GitHub\n")
+                                PTC()
+                        except requests.ConnectionError:
+                            os.system("cls")
+                            RCC_Logo()
+                            print("\n", Fore.BLACK+Back.LIGHTGREEN_EX+" R.C.C ", Fore.LIGHTYELLOW_EX+"> No internet , Please check your internet connection!\n")
+                            PTC()
                     
                     elif entry == 'clear':
                         os.system("cls")
@@ -838,7 +853,6 @@ def StartRCC():
                         Options()
                         main()
 
-                    
                     else:
                         print("\n", Fore.BLACK + Back.LIGHTGREEN_EX + " R.C.C ", Fore.LIGHTYELLOW_EX + "> That was Invailed\n")
 
