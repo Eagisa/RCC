@@ -21,8 +21,8 @@ import importlib.util
 
 # RCC COnfiguration
 #===============================#
-RCC_version = "2.5.0"
-RCC_RD = "03/23/2024"
+RCC_version = "3.0.0"
+RCC_RD = "04/16/2024"
 RCC_cache_id = "RCC81652335434"
 #===============================#
 
@@ -118,6 +118,39 @@ def StartRCC():
     Update()
     #=================================================================================================================================#
 
+    #Downloads the latest version of Roblox Client
+    #==============================================================================================================================================#
+    def download():
+        downloads_path = os.path.join(os.path.expanduser('~'), 'Downloads')
+        # Roblox launcher (aka: Roblox installer) downloader link
+        # url = 'https://setup.rbxcdn.com/' + a + '-Roblox.exe'  # (if not working)
+        url = 'https://www.roblox.com/download/client'  # (If setup.rbxcdn not working, use this link)
+        filename = 'RobloxPlayerInstaller.exe'
+        destination = os.path.join(downloads_path, filename)  # Replace 'path_to_your_folder' with the desired folder path
+
+        try:
+            urllib.request.urlretrieve(url, destination)
+            print("\n", Fore.BLACK + Back.LIGHTGREEN_EX + " R.C.C ", Fore.LIGHTYELLOW_EX + "> Installing roblox...\n")
+            install()  # Assuming you have defined the install function elsewhere
+        except urllib.error.URLError as e:
+            print("\n", Fore.BLACK + Back.LIGHTGREEN_EX + " R.C.C ", Fore.LIGHTYELLOW_EX + "> Error occurred while installing roblox-player:", e)
+            PTC()
+    #==============================================================================================================================================#
+
+    #Installing the downloaded Roblox Client setup
+    #===================================================================================================================================================#
+    def install():
+        # Assuming Downloads is a subdirectory in the user's home directory
+        downloads_path = os.path.join(os.path.expanduser("~"), "Downloads")
+        Roblox_installer_path = os.path.join(downloads_path, "RobloxPlayerInstaller.exe")
+
+        if os.path.exists(Roblox_installer_path):
+            os.startfile(Roblox_installer_path)
+        else:
+            print("", Fore.BLACK + Back.LIGHTGREEN_EX + " R.C.C ", Fore.LIGHTYELLOW_EX + "> {{Error couldn't install the latest version of Roblox Client}}")
+            PTC()
+    #===================================================================================================================================================#
+
     #This function search for roblox player
     #=====================================================================================================================================#
     def SearchForRoblox():
@@ -164,8 +197,33 @@ def StartRCC():
             with open(file_path, 'w') as json_file:
                 json_file.write(json_data_1)
         else:
+            change_console_resolution(29, 60)
+            logo()
+            Update()
             print("\n",Fore.BLACK+Back.LIGHTGREEN_EX+" R.C.C ",Fore.LIGHTYELLOW_EX+"> Roblox player is not installed in this system.\n")
 
+            #Roblox client version API
+            print(Fore.LIGHTYELLOW_EX+"\n                  Options\n"
+                    "<+>--------------------------------------<+>\n"
+                    " | (1) Type 'Y' To Install Roblox-Player  |\n"
+                    " |----------------------------------------|\n"
+                    " | (2) Type 'N' To Skip                   |\n"
+                    "<+>--------------------------------------<+>\n")
+            while True:
+                entry = input(Fore.LIGHTYELLOW_EX+"Choose an option [Y or N]?: ").lower()
+                if entry == 'y':
+                    download()
+                    print("\n",Fore.BLACK+Back.LIGHTGREEN_EX+" R.C.C ",Fore.LIGHTYELLOW_EX+"> After the roblox player installation completed.\n"
+                        "            restart the RCC program")
+                    PTC()
+                    exit()
+                elif entry == 'n':
+                    print("\n",Fore.BLACK+Back.LIGHTGREEN_EX+" R.C.C ",Fore.LIGHTYELLOW_EX+"> If the issue is resolved, Try the program again")
+                    PTC()
+                    exit()
+                else:
+                    print("",Fore.BLACK+Back.LIGHTGREEN_EX+" R.C.C ",Fore.LIGHTYELLOW_EX+"> That was invailed, Try again!")
+                    
     SearchForRoblox()
     #=====================================================================================================================================#
 
@@ -183,37 +241,6 @@ def StartRCC():
         else:
             main()
     #====================================================================================#
-
-    #Downloads the latest version of Roblox Client
-    #==============================================================================================================================================#
-    def download():
-        downloads_path = os.path.join(os.path.expanduser('~'), 'Downloads')
-        # Roblox launcher (aka: Roblox installer) downloader link
-        # url = 'https://setup.rbxcdn.com/' + a + '-Roblox.exe'  # (if not working)
-        url = 'https://www.roblox.com/download/client'  # (If setup.rbxcdn not working, use this link)
-        filename = 'RobloxPlayerInstaller.exe'
-        destination = os.path.join(downloads_path, filename)  # Replace 'path_to_your_folder' with the desired folder path
-
-        try:
-            urllib.request.urlretrieve(url, destination)
-            print("\n", Fore.BLACK + Back.LIGHTGREEN_EX + " R.C.C ", Fore.LIGHTYELLOW_EX + "> Installing roblox...\n")
-            install()  # Assuming you have defined the install function elsewhere
-        except urllib.error.URLError as e:
-            print("\n", Fore.BLACK + Back.LIGHTGREEN_EX + " R.C.C ", Fore.LIGHTYELLOW_EX + "> Error occurred while installing roblox-player:", e)
-    #==============================================================================================================================================#
-
-    #Installing the downloaded Roblox Client setup
-    #===================================================================================================================================================#
-    def install():
-        # Assuming Downloads is a subdirectory in the user's home directory
-        downloads_path = os.path.join(os.path.expanduser("~"), "Downloads")
-        Roblox_installer_path = os.path.join(downloads_path, "RobloxPlayerInstaller.exe")
-
-        if os.path.exists(Roblox_installer_path):
-            os.startfile(Roblox_installer_path)
-        else:
-            print("", Fore.BLACK + Back.LIGHTGREEN_EX + " R.C.C ", Fore.LIGHTYELLOW_EX + "> {{Error couldn't install the latest version of Roblox Client}}")
-    #===================================================================================================================================================#
 
     #RCC_cache_id.json To troubleshoot the issue
     #=========================================================#
