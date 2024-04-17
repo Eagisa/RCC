@@ -1,29 +1,15 @@
 {
-  "RCC-S": {
-    "Class": "RCC-Server",
-    "Version": "1.0.8.5",
-    "Date_Modified": "3/23/2024 1:30 PM"
-  },
-
   "RCC-C": {
     "Class": "RCC-Client",
     "Version": "3.0.0",
     "Date_Modified": "4/16/2024 1:31 AM"
   },
 
-  "RCC-CBS":{
-    "Class":"RCC-BootStrapper",
-    "Version": "101.3.5.5",
-    "Date_Modified": "3/23/2024 1:19 PM"
-  },
-
-
-
   "RCC-FS": {
     "RCCMP": "https://github.com/Eagisa/RCC/raw/main/R-D-Fs/RCCMP.py",
-    "RCC_CBS": "https://github.com/Eagisa/RCC/raw/main/R-D-Fs/RCC_CBS.py"
+    "RCC_CBS": "https://github.com/Eagisa/RCC/raw/main/R-D-Fs/RCC_CBS.py",
+    "Error": "https://raw.githubusercontent.com/Eagisa/RCC/main/R-D-Fs/Error.mp3"
   },
-
 
 
   "C-S-1": {
