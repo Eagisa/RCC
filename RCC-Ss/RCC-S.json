@@ -7,7 +7,6 @@
 
   "RCC-FS": {
     "RCCMP": "https://github.com/Eagisa/RCC/raw/main/R-D-Fs/RCCMP.py",
-    "RCC_CBS": "https://github.com/Eagisa/RCC/raw/main/R-D-Fs/RCC_CBS.py",
     "Error": "https://raw.githubusercontent.com/Eagisa/RCC/main/R-D-Fs/Error.mp3"
   },
 
