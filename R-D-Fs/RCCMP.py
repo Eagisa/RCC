@@ -21,8 +21,8 @@ import importlib.util
 
 # RCC COnfiguration
 #===============================#
-RCC_version = "3.0.0"
-RCC_RD = "04/16/2024"
+RCC_version = "4.0.0"
+RCC_RD = "04/17/2024"
 RCC_cache_id = "RCC81652335434"
 #===============================#
 
@@ -77,7 +77,7 @@ def StartRCC():
     #ClientAPI Server connection
     #===========================================================================================================#
     try:
-        change_console_resolution(18, 88)
+        change_console_resolution(18, 65)
         logo()
         # Make a request to the URL
         response = requests.get(f"https://raw.githubusercontent.com/Eagisa/RCC/main/RCC-Ss/RCC-S.json")
