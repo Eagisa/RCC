@@ -21,7 +21,7 @@ import importlib.util
 
 # RCC COnfiguration
 #===============================#
-RCC_version = "4.0.0"
+RCC_version = "5.0.0"
 RCC_RD = "04/17/2024"
 RCC_cache_id = "RCC81652335434"
 #===============================#
@@ -130,10 +130,10 @@ def StartRCC():
 
         try:
             urllib.request.urlretrieve(url, destination)
-            print("\n", Fore.BLACK + Back.LIGHTGREEN_EX + " R.C.C ", Fore.LIGHTYELLOW_EX + "> Installing roblox...\n")
+            print("\n", Fore.BLACK + Back.LIGHTGREEN_EX + " R.C.C ", Fore.LIGHTYELLOW_EX + "> Installing roblox player...\n")
             install()  # Assuming you have defined the install function elsewhere
         except urllib.error.URLError as e:
-            print("\n", Fore.BLACK + Back.LIGHTGREEN_EX + " R.C.C ", Fore.LIGHTYELLOW_EX + "> Error occurred while installing roblox-player:", e)
+            print("\n", Fore.BLACK + Back.LIGHTGREEN_EX + " R.C.C ", Fore.LIGHTYELLOW_EX + "> Error occurred while installing roblox player:", e)
             PTC()
     #==============================================================================================================================================#
 
@@ -871,7 +871,7 @@ def StartRCC():
                         RCC_Logo()
                         menu()
                     
-                    elif entry == 'back':
+                    elif entry == '`':
                         change_console_resolution(41, 64)
                         os.system("cls")                 
                         logo()
