@@ -1,7 +1,11 @@
 {
-    "DFIntTaskSchedulerTargetFps": "1000",
-    "FFlagHandleAltEnterFullscreenManually": "False",
+    "FIntDebugForceMSAASamples": "1",
+    "FIntRenderShadowIntensity": "0",
     "FLogNetwork": "7",
+    "FFlagHandleAltEnterFullscreenManually": "False",
+    "FFlagDisablePostFx": "True",
+    "FIntTerrainArraySliceSize": "0",
+    "DFIntTaskSchedulerTargetFps": "1000",
     "FIntRakNetResendBufferArrayLength": "128",
     "FFlagOptimizeNetwork": "True",
     "FFlagOptimizeNetworkRouting": "True",
@@ -18,4 +22,5 @@
     "DFIntNetworkPrediction": "120",
     "DFIntNetworkLatencyTolerance": "1",
     "DFIntMinimalNetworkPrediction": "0.1"
+    
 }
